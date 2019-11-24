@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_scan_ble"
+            android:icon="@drawable/ic_bluetooth_black_24dp"
+            android:title="Scan BLE" />
+        <item
+            android:id="@+id/nav_searchdoctors"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Search Doctors" />
+        <item
+            android:id="@+id/nav_profileedit"
+            android:icon="@drawable/ic_edit_black_24dp"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/messenger_bubble_small_blue"
+            android:title="Chat" />
+        <item
+            android:id="@+id/nav_doctorApprove"
+            android:icon="@drawable/ic_assignment_turned_in_black_24dp"
+            android:title="Approve Doctors" />
+        <item
+            android:id="@+id/nav_makerequest"
+            android:icon="@drawable/ic_playlist_add_black_24dp"
+            android:title="Make Doctor Request" />
+        <item
+            android:id="@+id/nav_myrequests"
+            android:icon="@drawable/ic_playlist_add_check_black_24dp"
+            android:title="My Requests" />
+        <item
+            android:id="@+id/nav_ApproveRequests"
+            android:icon="@drawable/ic_assignment_turned_in_black_24dp"
+            android:title="Approve Reqeusts" />
+
+        <item
+            android:id="@+id/nav_myPatients"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="My Patients" />
+        <item
+            android:id="@+id/nav_MyDoctors"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="My Doctors" />
+        <item
+            android:id="@+id/nav_MyData"
+            android:icon="@drawable/ic_mydata"
+            android:title="My Data" />
+    </group>
+
+    <item android:title="Log Out">
+        <menu>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/doctor_prof"
+        android:layout_width="50dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/doctor_name"
+        android:layout_marginStart="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@id/doctor_prof"
+        android:layout_width="wrap_content"
+        android:text="Name"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/doctor_approve"
+        android:text="Approve"
+        android:layout_toStartOf="@+id/doctor_decline"
+        android:layout_marginEnd="10dp"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/doctor_decline"
+        android:text="Decline"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:id="@+id/doctor_email"
+        android:text="E-mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/doctor_prof"/>
+
+</RelativeLayout>

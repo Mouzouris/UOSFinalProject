@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DisplayReadings">
+
+    <LinearLayout
+        android:id="@+id/layoutlabels"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:context=".Fragments.DisplayReadings">
+
+
+            <TextView
+                android:text="accx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/labelaccx" />
+
+            <TextView
+                android:text="accy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/labelaccy" />
+
+            <TextView
+                android:text="accz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/labelaccz"
+
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:text="dt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/labeldt"
+
+            android:paddingStart="50dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/madgwicktitles"
+        android:layout_marginTop="10dp"
+
+        android:text="Madgwick/Mahony"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutlabels"
+        android:paddingStart="50dp" />
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/mySimpleXYPlot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/madgwicktitles"
+
+        />
+
+
+
+
+
+</RelativeLayout>

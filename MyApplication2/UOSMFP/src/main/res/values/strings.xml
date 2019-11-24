@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">COMP 6200 MSc Project</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">User</string>
+    <string name="nav_header_subtitle">user@mail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="main_activity">Masters App</string>
+    <string name="username">E-mail</string>
+    <string name="sign_in">Sign in</string>
+    <string name="signup">Sign up</string>
+    <string name="loading">Loading</string>
+    <string name="doctor">Doctor</string>
+    <string name="patient">Patient</string>
+    <string name="please_indicate_the_type_of_client_you_are">Please Indicate the type of client you are…</string>
+    <string name="surname">Surname</string>
+    <string name="name">Name</string>
+    <string name="sign_up">Sign up</string>
+    <string name="back">Back</string>
+    <string name="AuthFail">Authentication Failed</string>
+    <string name="password">Password</string>
+    <string name="facebook_app_id">849400375441329</string>
+    <string name="fb_login_protocol_scheme">fb849400375441329</string>
+
+
+    <string name="w">Ang. velocities:</string>
+    <string name="a">Accelerations:</string>
+    <string name="m">Magnetic field:</string>
+    <string name="eulers">Eulers:</string>
+    <string name="x">X:</string>
+    <string name="y">Y:</string>
+    <string name="z">Z:</string>
+    <string name="gains">Filter gains:</string>
+    <string name="betta">β:</string>
+    <string name="zeta">ζ:</string>
+    <string name="gain_value">%.2f</string>
+    <string name="value">%.5f</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="submit_request">Submit_request</string>
+    <string name="search">Search...</string>
+    <string name="submit_changes">Submit Changes</string>
+
+
+</resources>

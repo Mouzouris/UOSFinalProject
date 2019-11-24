@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ChatsFragment">
+
+    <TextView
+        android:id="@+id/approve_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Approve or Decline Doctor Requests "
+        />
+    <EditText
+        android:layout_below="@id/approve_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/search"
+        android:id="@+id/search_doctors"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/doctors_recycler"
+        android:layout_below="@id/search_doctors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

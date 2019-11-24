@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SensorTagConnect">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/device_address"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/devicebuttons"
+        android:layout_below="@id/device_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/buttondisconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/buttonconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="27dp" />
+    </LinearLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@id/devicebuttons"
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></androidx.viewpager.widget.ViewPager>
+</RelativeLayout>

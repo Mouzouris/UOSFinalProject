@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Kalmanfilter">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Kalman Filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:id="@+id/text1"
+        android:text="Orientation values should show up here."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

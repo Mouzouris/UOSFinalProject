@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scan_ble">
+
+    <Button
+        android:layout_alignParentTop="true"
+        android:id="@+id/start_scan"
+        android:layout_width="wrap_content"
+        android:onClick="onClick"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Start Scan" />
+
+    <Button
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:id="@+id/stop_scan"
+        android:onClick="onClick"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Stop Scan" />
+
+    <ListView
+        android:layout_below="@+id/stop_scan"
+        android:id="@+id/BleDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

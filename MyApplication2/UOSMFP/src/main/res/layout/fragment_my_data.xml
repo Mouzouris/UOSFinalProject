@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/Patientdatedialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Date"
+         />
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:text="Today"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Patientdatechosen"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Patientdata_profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@mipmap/launchericon_round" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/Patientdataname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/Patientdatasurname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Surname" />
+
+
+                <TextView
+                    android:id="@+id/Patientdatatype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Type" />
+
+
+
+                <TextView
+                    android:id="@+id/Patientdataemail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Email" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:paddingStart="10dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Steps Progress"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Patientdatastepsmade"
+                android:text="today steps"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:background="@color/com_facebook_button_login_silver_background_color_pressed"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leg Elevation Progress"
+            android:layout_gravity="center"
+
+            />
+
+        <view class="com.example.myapplication.Services.CustomGraphView"
+
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            app:seriesType="line"
+            android:layout_height="wrap_content"
+            android:id="@+id/Patientdataview"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:layout_height="wrap_content"
+        android:text="Total Elevation Time"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/Patientdatatotalelevationtime"
+        android:text="Elevation Time"/>
+
+</LinearLayout>
